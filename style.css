@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primeira-color: #ffa07a;
+    --segunda-color: #b97155;
+    --terceira-color: #ffa07a45;
+    --quarta-color: #444;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--primeira-color);
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: #fff;
+    width: 450px;
+    height: max-content;
+    margin: 30px 10px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #44444481;
+}
+
+#title {
+    background-color: var(--quarta-color);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#formulario {
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+p {
+    padding: 2px;
+}
+
+input {
+    width: 87%;
+    border: none;
+    outline: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+input:hover {
+    outline: 2.5px solid var(--segunda-color);
+}
+
+input:focus {
+    background-color: var(--terceira-color);
+}
+
+button {
+    margin: 15px 0;
+    font-weight: bold;
+    background-color: var(--segunda-color);
+    color: white;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.547);
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.1s;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.button-reset {
+    display: none;
+}
+
+button:hover {
+    background-color: var(--primeira-color);
+    color: var(--quarta-color);
+    text-shadow: none;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.214);
+}
+
+#resultado {
+    display: none;
+}
+
+.calc, .msg {
+    margin: 0 0 10px 15px;
+}
+
+table {
+    border: 2px solid var(--segunda-color);
+    margin: auto;
+    width: 95%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    display: none;
+}
+
+td, th {
+    border: 1px solid var(--quarta-color);
+    padding: 10px;
+}
+
+th {
+    background-color: #b97155b1;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.573);
+    font-weight: 500;
+    text-align: right;
+    width: 130px;
+}
+
+td {
+    background-color: #b971551a;
+}
+
+tr.active {
+    background-color: #b9715571;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.829);
+}

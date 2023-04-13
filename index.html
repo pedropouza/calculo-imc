@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h1 id="title">Cálculo de IMC</h1>
+        </div>
+        <div id="formulario">
+            <form>
+                <label for="peso">
+                    <p>Peso:</p>
+                </label>
+                <p><input type="number" name="ipeso" id="peso" required step="0.01" min="1"> (Kg)</p>
+                <label for="altura">
+                    <p>Altura:</p>
+                </label>
+                <p><input type="number" name="ialtura" id="altura" required step="0.01" min="1"> (m)</p>
+                <button type="submit">Calcular</button>
+            <div id="resultado">
+                <div class="calc"></div>
+                <div class="msg"></div>
+            </div>
+            <table id="tabela">
+                <tr class="muito-abaixo">
+                    <th>Abaixo de 17</th>
+                    <td>Muito Abaixo do Peso</td>
+                </tr>
+                <tr class="abaixo">
+                    <th>De 17 a 18,5</th>
+                    <td>Abaixo do Peso</td>
+                </tr>
+                <tr class="peso-ideal">
+                    <th>De 18,5 a 25</th>
+                    <td>Peso Ideal</td>
+                </tr>
+                <tr class="sobrepeso">
+                    <th>De 25 a 30</th>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr class="obesidade">
+                    <th>De 30 a 35</th>
+                    <td>Obesidade</td>
+                </tr>
+                <tr class="obesidade-severa">
+                    <th>De 35 a 40</th>
+                    <td>Obesidade Severa</td>
+                </tr>
+                <tr class="obesidade-morbida">
+                    <th>40 ou Mais</th>
+                    <td>Obesidade Mórbida</td>
+                </tr>
+            </table>
+            <button class="button-reset" type="reset" onclick="resetar()">Resetar</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
